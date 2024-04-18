@@ -18,3 +18,38 @@ function App() {
 }
 
 export default App;
+import React from 'react';
+
+function Home() {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>Welcome to the Home Page!</p>
+    </div>
+  );
+}
+
+export default Home;
+import React from 'react';
+
+function About() {
+  return (
+    <div>
+      <h1>About Page</h1>
+      <p>Welcome to the About Page!</p>
+    </div>
+  );
+}
+
+export default About;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
